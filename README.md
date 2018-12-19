@@ -22,6 +22,6 @@ aspell.txt         -- Accuracy 91%
 1. Python 3.0
 2. Numpy
 ## Observations
-The function create_vector makes the cost vector by forming a vector made up of different powers of the features. It was observed that the accuracy increased when the highest degree taken of the features was increased. Initially, the accuracy over aspell was less than 85%, but after increasing the degree, the accuracy increased to 91%.
+The function create_vector makes the cost vector by forming a vector made up of different powers of the features. It was observed that the accuracy increased when the highest degree taken of the features was increased. Initially, the accuracy over aspell.txt dataset was less than 85%, but after increasing the degree, the accuracy increased to 91%.
 ## Contribute
 Contributions and suggestions are welcome.
