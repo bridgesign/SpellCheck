@@ -23,5 +23,7 @@ aspell.txt         -- Accuracy 91%
 2. Numpy
 ## Observations
 The function create_vector makes the cost vector by forming a vector made up of different powers of the features. It was observed that the accuracy increased when the highest degree taken of the features was increased. Initially, the accuracy over aspell.txt dataset was less than 85%, but after increasing the degree, the accuracy increased to 91%.
+
+From the weights of the matrix, it can be observed that the cost function is heavily affected by the cube of frequency feature. Possibly, in case of english language, the frequency of letters play an important role compared to other features.
 ## Contribute
 Contributions and suggestions are welcome.
