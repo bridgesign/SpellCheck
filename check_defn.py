@@ -62,7 +62,7 @@ def cost(query,word):
 
 #Creates a cost vector from the values returned by cost function
 def create_vector(cost_vector):
-    cost_vector = [cost_vector[i]*cost_vector[j]*cost_vector[k] for i in range(8) for j in range(8) for k in range(8) for l in range(8) if (i<=j and j<=k and k<=l)]
+    cost_vector = [cost_vector[i]*cost_vector[j]*cost_vector[k] for i in range(8) for j in range(8) for k in range(8) if (i<=j and j<=k)]
     return np.array(cost_vector)
 
 #Returns the word in wordlist with the least cost

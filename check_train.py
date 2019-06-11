@@ -27,11 +27,11 @@ def train(word_list, query_list, ensemble, iterations,l_rate,matrix,lamb):
                 accuracy+=1
         cost = cost/ensemble
         accuracy = accuracy*100/ensemble
-        print('Iteration:',iteration,'\tAccuracy:',accuracy,'%')
+        print('Iteration:',iteration,'\tAccuracy:',accuracy,'%', '\tCost:',cost)
         (correction,cost) = backward(back, matrix,lamb)
         print('\tSecondary Cost:',cost)
         matrix = matrix - l_rate*correction/(((accuracy+1)**2)*ensemble)
-    counter+=ensemble
+        counter+=ensemble
     return matrix
 
 
@@ -62,4 +62,5 @@ lamb_da = 0
 
 print('Learning rate:',learning_rate, 'Ensemble Size:', ensemble_size, 'Iterations:',iterations,'Lambda:',lamb_da)
 matrix = train(word_list,query_list, ensemble_size, iterations, learning_rate, matrix, lamb_da)
-print([matrix])
+np.save('matrix.npy', matrix)
+np.savetxt('matrix.txt', matrix)
