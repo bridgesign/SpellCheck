@@ -6,7 +6,7 @@ The data sets were accquired from https://www.kaggle.com/bittlingmayer/spelling
 ### Training Set
 wikipedia.txt
 ### Test Sets
-spell-testset1.txt -- Accuracy 96%\
+spell-testset1.txt -- Accuracy 98%\
 spell-testset2.txt -- Accuracy 95%\
 aspell.txt         -- Accuracy 91%
 ## Predefined Features
